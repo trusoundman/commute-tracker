@@ -15,7 +15,7 @@ const totalTrips = [
 ]
 
 app.get('/api/trip', (req, res) => {
-    app.status(200).send(totalTrips)
+    res.status(200).send(totalTrips)
 })
 
 app.listen(3001, () => console.log('listening on 3001'))
